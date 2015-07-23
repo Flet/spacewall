@@ -25,7 +25,7 @@
     "cli"
   ],
   "license": "ISC",
-  "main": "index.js",
+  "main": "spacewall.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/flet/spacewall.git"
