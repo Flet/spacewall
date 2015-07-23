@@ -1,0 +1,26 @@
+spacewall %s
+Set your wallpaper to the NASA Astronomy Photo of the Day and output
+information about the photo.
+
+  Usage:
+      spacewall <flags>
+
+  Flags:
+      -k  --key       Provide your NASA developer key (recommended!)
+      -l  --latest    Fetch the latest APOD image (default)
+      -r  --random    Pick a random image from the archive
+      -s  --silent    Suppress all text output
+      -t  --title     Output only the title of the image
+      -j  --json      Show information as JSON
+      -h, --help      Show usage information.
+      -v  --version   Show current version.
+
+  By Default, spacewall will use DEMO_KEY. Its limited to 30 requests per hour
+  and 50 requests per day.
+
+  Get your own NASA developer key at:
+  https://api.nasa.gov/api.html#authentication
+
+  The API key can also be set via the environment variable NASA_API_KEY.
+
+  Full Readme:  https://github.com/flet/spacewall

@@ -1,0 +1,43 @@
+{
+  "name": "spacewall",
+  "version": "1.0.0",
+  "description": "Set your wallpaper to the NASA Astronomy Photo of the Day.",
+  "author": "Dan Flettre <fletd01@yahoo.com>",
+  "bin": "./bin.js",
+  "bugs": {
+    "url": "https://github.com/flet/spacewall/issues"
+  },
+  "devDependencies": {
+    "snazzy": "^1.0.1",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.1"
+  },
+  "homepage": "https://github.com/flet/spacewall",
+   "keywords": [
+    "space",
+    "Astronomy",
+    "wallaper",
+    "nasa",
+    "photo",
+    "desktop",
+    "random",
+    "api",
+    "cli"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flet/spacewall.git"
+  },
+  "scripts": {
+    "test": "snazzy && tape test/*.js | tap-spec"
+  },
+  "dependencies": {
+    "apod": "github:flet/apod.js#proxy",
+    "minimist": "^1.1.2",
+    "os-tmpdir": "^1.0.1",
+    "request": "^2.60.0",
+    "wallpaper": "^1.1.0"
+  }
+}
