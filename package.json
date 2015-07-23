@@ -1,6 +1,6 @@
 {
   "name": "spacewall",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set your wallpaper to the NASA Astronomy Photo of the Day.",
   "author": "Dan Flettre <fletd01@yahoo.com>",
   "bin": "./bin.js",
@@ -13,7 +13,7 @@
     "tape": "^4.0.1"
   },
   "homepage": "https://github.com/flet/spacewall",
-   "keywords": [
+  "keywords": [
     "space",
     "Astronomy",
     "wallaper",
