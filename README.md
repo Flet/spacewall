@@ -66,9 +66,9 @@ Also, you can tell people "I'm authorized to use NASA's API, no big deal." and t
 
 ## Fun Tricks
 
-On Ubuntu (and maybe other Linux flavors), this command can be added to a startup/cron script to change the wallpaper to a random image and send a notification to the UI with the title:
+On Ubuntu (and maybe other Linux flavors), this command can be added to a `.profile` to change the wallpaper to a random image and send a notification to the UI with the title:
 ```bash
-notify-send -i computer  "$(node bin.js --key MY_KEY --random --title)
+notify-send -i computer  "$(spacewall --random --title)
 ```
 
 Are you using `spacewall` in a fun way? Add your Fun Trick here via a PR!
