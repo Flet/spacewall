@@ -5,6 +5,7 @@ var fs = require('fs')
 var path = require('path')
 var req = require('request')
 var tmp = require('os-tmpdir')()
+
 var wallpaper = require('wallpaper')
 
 function spacewall (opts) {
@@ -25,13 +26,15 @@ function spacewall (opts) {
     }
 
     var dest = path.join(tmp, path.parse(data.url).base)
-    req(data.url).pipe(fs.createWriteStream(dest))
+    var stream = req(data.url).pipe(fs.createWriteStream(dest))
 
-    wallpaper.set(dest, function (err) {
-      if (err) console.error(err)
+    stream.on('finish', function() {
+      wallpaper.set(dest, function (err) {
+        if (err) console.error(err)
+      })
+
+      if (!opts.silent) outputData(data)
     })
-
-    if (!opts.silent) outputData(data)
   }
 
   function outputData (data) {
