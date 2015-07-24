@@ -14,15 +14,15 @@
   },
   "homepage": "https://github.com/flet/spacewall",
   "keywords": [
-    "space",
     "Astronomy",
-    "wallaper",
+    "api",
+    "cli",
+    "desktop",
     "nasa",
     "photo",
-    "desktop",
     "random",
-    "api",
-    "cli"
+    "space",
+    "wallaper"
   ],
   "license": "ISC",
   "main": "spacewall.js",
@@ -34,7 +34,7 @@
     "test": "snazzy && tape test/*.js | tap-spec"
   },
   "dependencies": {
-    "apod": "github:flet/apod.js#proxy",
+    "apod": "^0.2.0",
     "minimist": "^1.1.2",
     "os-tmpdir": "^1.0.1",
     "request": "^2.60.0",
