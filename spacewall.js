@@ -28,7 +28,7 @@ function spacewall (opts) {
     var dest = path.join(tmp, path.parse(data.url).base)
     var stream = req(data.url).pipe(fs.createWriteStream(dest))
 
-    stream.on('finish', function() {
+    stream.on('finish', function () {
       wallpaper.set(dest, function (err) {
         if (err) console.error(err)
       })
