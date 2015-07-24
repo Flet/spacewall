@@ -19,6 +19,18 @@ npm install -g spacewall
 
 ## CLI Usage
 
+### Set your wallpaper to the current day's APOD:
+```bash
+spacewall
+```
+
+### ...To a random image
+```
+spacewall --random
+```
+
+### Full Usage
+
 ```
   Usage:
       spacewall <flags>
