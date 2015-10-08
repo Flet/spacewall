@@ -55,6 +55,5 @@ function spacewall (opts) {
       console.log('*** Get your NASA developer key to avoid rate limits!')
       console.log('*** https://api.nasa.gov/api.html#authentication')
     }
-
   }
 }
