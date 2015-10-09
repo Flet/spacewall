@@ -22,7 +22,7 @@
     "photo",
     "random",
     "space",
-    "wallaper"
+    "wallpaper"
   ],
   "license": "ISC",
   "main": "spacewall.js",
