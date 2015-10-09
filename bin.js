@@ -16,7 +16,7 @@ var argv = require('minimist')(process.argv.slice(2), {
 
 if (argv.help) {
   fs.readFile('usage.txt', {encoding: 'utf8'}, function (err, usage) {
-    if (err) console.err(err)
+    if (err) console.error(err)
     console.log(usage, fetchVersion())
     process.exit(0)
   })
