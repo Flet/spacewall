@@ -34,7 +34,7 @@
     "test": "snazzy && tape test/*.js | tap-spec"
   },
   "dependencies": {
-    "apod": "^0.2.0",
+    "apod": "^0.3.0",
     "minimist": "^1.1.2",
     "os-tmpdir": "^1.0.1",
     "request": "^2.60.0",
